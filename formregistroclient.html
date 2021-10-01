@@ -8,12 +8,13 @@
             href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
     />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="formclients.js"></script>
 </head>
 <body>
 <div class="col-sm-6 col-sm-offset-3">
     <h1>Formulario creación de Cliente</h1>
 
-    <form action="process.php" method="POST">
+    <form action="https://g65366e6ba1cfc5-rentacar.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/client/client" method="POST">
 
         <div id="id-group" class="form-group">
             <label for="name">ID</label>
@@ -48,13 +49,13 @@
             />
         </div>
 
-        <div id="edad-group" class="form-group">
+        <div id="age-group" class="form-group">
             <label for="edad">Edad</label>
             <input
                     type="number"
                     class="form-control"
-                    id="edad"
-                    name="edad"
+                    id="age"
+                    name="age"
                     placeholder="Ingresa la edad"
             />
         </div>
