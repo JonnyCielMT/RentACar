@@ -14,14 +14,16 @@ $(document).ready(function () {
             encode: true,
         }).done(function (data) {
             console.log(data);
-            $("form").html(
-                '<div class="alert alert-success">El cliente ha sido creado con éxito</div>'
+            $("form").empty().append(
+                '<div class="alert alert-success">El cliente ha sido creado con éxito</div>',
+                '<a href="formregistroclient.html" class="btn btn-primary">Volver</a>'
             );
 
         }).fail(function (data) {
             console.log(data);
-            $("form").html(
-                '<div class="alert alert-danger">Ha ocurrido el siguiente error:' + data.responseJSON.cause + '</div>'
+            $("form").empty().append(
+                '<div class="alert alert-danger">Ha ocurrido el siguiente error:' + data.responseJSON.cause + '</div>',
+                '<a href="formregistroclient.html" class="btn btn-primary">Volver</a>'
             );
         });
 
