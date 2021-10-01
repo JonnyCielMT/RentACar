@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario creación de Cliente</title>
+    <link
+            rel="stylesheet"
+            href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Formulario creación de Cliente</h1>
+
+    <form action="process.php" method="POST">
+
+        <div id="id-group" class="form-group">
+            <label for="name">ID</label>
+            <input
+                    type="number"
+                    class="form-control"
+                    id="id"
+                    name="id"
+                    placeholder="Ingrese el ID"
+            />
+        </div>
+
+        <div id="name-group" class="form-group">
+            <label for="name">Nombre</label>
+            <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Ingresa el nombre"
+            />
+        </div>
+
+        <div id="email-group" class="form-group">
+            <label for="email">Email</label>
+            <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Ingresa el email"
+            />
+        </div>
+
+        <div id="edad-group" class="form-group">
+            <label for="edad">Edad</label>
+            <input
+                    type="number"
+                    class="form-control"
+                    id="edad"
+                    name="edad"
+                    placeholder="Ingresa la edad"
+            />
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            Enviar
+        </button>
+    </form>
+</div>
+</body>
+</html>
