@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de mensajes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="editarMessageFunciones.js"></script>
+</head>
+
+<body>
+    <h1>Lista de mensajes</h1>
+    <script type="text/javascript">
+        traerInfoMessage();
+    </script>
+    <div id="resultadoMessage"></div>
+    <p>Si no aparece nada, no hay mensajes</p>
+
+    <br><div id="divDetalleMessage" style="display: none">
+        <h2>Editar mensaje</h2>
+        <label>ID</label><br>
+        <label id="idMessageMostrar"></label><br>
+        <label>Texto del mensaje</label><br>
+        <input type="text" id="detaMessagetextMessage"><br>
+        <button onclick="editarInfoMessage()">Actualizar</button>
+        <button onclick="cancelar()">Cancelar</button>
+    </div>
+
+</body>
+
+</html>

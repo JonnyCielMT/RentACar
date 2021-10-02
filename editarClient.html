@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de clientes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="editarClientFunciones.js"></script>
+</head>
+
+<body>
+    <h1>Lista de clientes</h1>
+    <script type="text/javascript">
+        traerInfoClient();
+    </script>
+    <div id="resultadoClient"></div>
+    <p>Si no aparece nada, no hay clientes</p>
+    
+
+    <br><div id="divDetalleClient" style="display: none">
+        <h2>Editar cliente</h2>
+        <label>ID</label><br>
+        <label id="idClientMostrar"></label><br>
+        <label>Nombre</label><br>
+        <input type="text" id="detaNameClient"><br>
+        <label>Email</label><br>
+        <input type="text" id="detaEmailClient"><br>
+        <label>Edad</label><br>
+        <input type="number" id="detaAgeClient"><br><br>
+        <button onclick="editarInfoClient()">Actualizar</button>
+        <button onclick="cancelar()">Cancelar</button>
+    </div>
+
+</body>
+
+</html>

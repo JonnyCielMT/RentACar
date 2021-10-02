@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de carros</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="editarCarFunciones.js"></script>
+</head>
+
+<body>
+    <h1>Lista de carros</h1>
+    <script type="text/javascript">
+        traerInfoCar();
+    </script>
+    <div id="resultadoCar"></div>
+    <p>Si no aparece nada, no hay carros</p>
+
+    <br><div id="divDetalleCar" style="display: none">
+        <h2>Editar carro</h2>
+        <label>ID</label><br>
+        <label id="idMostrar"></label><br>
+        <label>Marca</label><br>
+        <input type="text" id="detaBrandCar"><br>
+        <label>Modelo</label><br>
+        <input type="number" id="detaModelCar"><br>
+        <label>Categoría</label><br>
+        <input type="number" id="detaCategoryCar"><br><br>
+        <button onclick="editarInfoCar()">Actualizar</button>
+        <button onclick="cancelar()">Cancelar</button>
+    </div>
+
+</body>
+
+</html>
