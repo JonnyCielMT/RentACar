@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario creación de mensajes</title>
+    <link
+            rel="stylesheet"
+            href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="formmensajes.js"></script>
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Formulario creación de mensajes</h1>
+
+    <form action="https://g65366e6ba1cfc5-rentacar.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message" method="POST">
+
+        <div id="id-group" class="form-group">
+            <label for="id">ID</label>
+            <input
+                    type="number"
+                    class="form-control"
+                    id="id"
+                    name="id"
+                    placeholder="Ingrese el ID"
+            />
+        </div>
+
+        <div id="message-group" class="form-group">
+            <label for="message">Mensaje</label>
+            <input
+                    type="text"
+                    class="form-control"
+                    id="message"
+                    name="messagetext"
+                    placeholder="Ingresa el mensaje"
+            />
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            Enviar
+        </button>
+
+        <a href="index.html" class="btn btn-primary">Volver</a>
+    </form>
+</div>
+</body>
+</html>
